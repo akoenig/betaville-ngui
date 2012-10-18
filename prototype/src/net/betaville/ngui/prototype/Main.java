@@ -44,13 +44,13 @@ public class Main extends SimpleApplication {
 
     @Override
     public void simpleInitApp() {
-    NiftyJmeDisplay niftyDisplay = new NiftyJmeDisplay(assetManager, inputManager, audioRenderer, guiViewPort);
-    
-    Nifty nifty = niftyDisplay.getNifty();
-    
-    nifty.fromXml("Interface/screen.xml", "start");
-    guiViewPort.addProcessor(niftyDisplay);
-    flyCam.setDragToRotate(true);
+        NiftyJmeDisplay niftyDisplay = new NiftyJmeDisplay(assetManager, inputManager, audioRenderer, guiViewPort);
+
+        Nifty nifty = niftyDisplay.getNifty();
+
+        nifty.fromXml("Interface/screen.xml", "start");
+        guiViewPort.addProcessor(niftyDisplay);
+        flyCam.setDragToRotate(true);
     }
 
     @Override
