@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
+<nifty xmlns="http://nifty-gui.sourceforge.net/nifty.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty.xsd http://nifty-gui.sourceforge.net/nifty.xsd">
 
+    <useControls filename="nifty-default-controls.xml" />
+    <useStyles filename="Interface/Styles/styles.xml" />
 
-<root>
-    
-</root>
+    <screen id="start">
+        <layer id="background" childLayout="center">
+            <image filename="Interface/Backgrounds/landing.png"></image>
+        </layer>
+        
+        <layer id="content" childLayout="center">
+            <panel id="wrapper" childLayout="vertical" width="70%">
+                <panel id="eyecatcher" height="50%" childLayout="horizontal">
+                    <text textVAlign="bottom" height="100%" font="Interface/Fonts/open-sans-14.fnt" textHAlign="left" text="Betaville is an open-source multiplayer environment for real cities, in&#10;which ideas for new works of public art, architecture, urban design, and&#10;development can be shared, discussed, tweaked, and brought to maturity&#10;in context, and with the kind of broad participation people take for&#10;granted in open source software development." />
+                </panel>
+                <panel id="buttons" height="20%" width="100%" childLayout="center">
+                    <control name="button" align="right" label="Let's start!" />
+                </panel>
+            </panel>
+        </layer>
+    </screen>
+</nifty>
