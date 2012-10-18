@@ -1,1 +1,6 @@
 .DS_Store
+/prototype/betaville-ngui/nbproject/private/
+/prototype/betaville-ngui/build/
+/prototype/nbproject/private/
+/prototype/build/private.properties
+prototype/build
