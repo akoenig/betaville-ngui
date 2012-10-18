@@ -29,6 +29,7 @@ package net.betaville.ngui.prototype;
 import com.jme3.app.SimpleApplication;
 import com.jme3.niftygui.NiftyJmeDisplay;
 import com.jme3.renderer.RenderManager;
+import com.jme3.system.AppSettings;
 import de.lessvoid.nifty.Nifty;
 
 /**
@@ -38,7 +39,12 @@ import de.lessvoid.nifty.Nifty;
 public class Main extends SimpleApplication {
 
     public static void main(String[] args) {
+        AppSettings settings = new AppSettings(true);
+        settings.setResolution(1024, 768);
+ 
         Main app = new Main();
+        app.setSettings(settings);
+        app.setShowSettings(false);
         app.start();
     }
 
