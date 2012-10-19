@@ -1,1 +1,3 @@
-# Betaville - The next generation user interface project.
+# Betaville ngUI
+
+The next generation user interface project.
